@@ -1,8 +1,9 @@
 package no.toyota.serviceautomation.kafkaapi.controller;
 
+import no.toyota.serviceautomation.kafkaapi.kafka.ConsentProducer;
+import no.toyota.serviceautomation.kafkaapi.kafka.Producer;
 import no.toyota.serviceautomation.kafkaapi.model.Consent;
 import no.toyota.serviceautomation.kafkaapi.repository.ConsentRepository;
-import no.toyota.serviceautomation.kafkaapi.kafka.ConsentProducer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
@@ -14,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConsentController {
 
     private ConsentRepository repository;
-    private ConsentProducer producer;
+    private Producer producer;
 
 
     public static final Logger log = LoggerFactory.getLogger(ConsentController.class);
 
-    public ConsentController(ConsentRepository repository, ConsentProducer producer) {
+    public ConsentController(ConsentRepository repository, Producer producer) {
         this.repository = repository;
         this.producer = producer;
     }
@@ -47,6 +48,7 @@ public class ConsentController {
             consentWithId.getId(),
             consentWithId
         );
+
     }
 
 }
