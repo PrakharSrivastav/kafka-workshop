@@ -1,3 +1,3 @@
 # Kafka-api
 
-[Home](../../README.md)
+[Home](../README.md)
