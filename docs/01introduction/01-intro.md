@@ -1,5 +1,5 @@
 # Introduction
-
+[Home](../../README.md)
 
 ## Integration story
 
@@ -52,3 +52,4 @@
 
 ![kafka-components.jpeg](img/01-kafka-components.jpeg)
 
+[Home](../../README.md)

@@ -1,4 +1,5 @@
 # Kafka concepts
+[Home](../../README.md)
 
 ## Topic, partitions and offsets
 
@@ -37,3 +38,5 @@ Topics are similar to database tables (only real time)
 - Offsets always increment. Cannot reuse even if previous messages are deleted.
 - Data is assigned randomly to a partition.(?????)
 - Can have as many partitions as we need (10, 100, 1000)
+
+[Home](../../README.md)

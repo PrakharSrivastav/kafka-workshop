@@ -1,4 +1,5 @@
 # Kafka message
+[Home](../../README.md)
 
 ## Anatomy of a kafka message
 
@@ -69,3 +70,5 @@ Same Object representation should be available at Producer/Consumer.
   - Adding removing fields.
   - **Option1**: Create a new topic, produce/consume from the new topic
   - **Schema Registry**: TBD
+
+[Home](../../README.md)
