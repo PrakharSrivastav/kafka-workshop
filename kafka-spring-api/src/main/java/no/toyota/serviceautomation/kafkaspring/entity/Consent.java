@@ -1,4 +1,4 @@
-package no.toyota.serviceautomation.kafkaapi.entity;
+package no.toyota.serviceautomation.kafkaspring.entity;
 
 import jakarta.persistence.*;
 

@@ -13,6 +13,7 @@
 
     <modules>
         <module>kafka-api</module>
+        <module>kafka-spring-api</module>
     </modules>
 
     <properties>
