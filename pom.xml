@@ -14,6 +14,7 @@
     <modules>
         <module>kafka-api</module>
         <module>kafka-spring-api</module>
+        <module>kafka-oci-api</module>
     </modules>
 
     <properties>
