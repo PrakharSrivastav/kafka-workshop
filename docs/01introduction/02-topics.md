@@ -23,6 +23,11 @@ Topics are similar to database tables (only real time)
 - Each topic has partitions (for redundancy)
 - Producer writes, Consumer reads.
 
+## Replication factors
+- Replicas ( between 2,3)
+- Insync Replicas
+
+![th.jpg](img%2Fth.jpg)
 
 ### Partitions and offsets
 - Topics are split into partitions (eg 3 partitions).

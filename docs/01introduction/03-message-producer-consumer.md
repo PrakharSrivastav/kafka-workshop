@@ -31,6 +31,10 @@ Producer knows before sending the message that which partition should be used.
 - **No Message key**: Producer well send data to partitions in round-robin fashion.
 - **Consistent Message key**: for example order-id, The messages for that order will land on same partition. All records for that order will always be in order.
 
+### Producer Acks
+- acks = 0 : Fire and forget (At most once)
+- acks = 1 : Leader (Atleas once)
+- acks = all/-1 : All insync replicas (exactly once)
 
 ## Consumer (subscriber/receiver)
 - **Pull**: Consumers pull messages from Kafka. Can be done in batches (100 messages per pull)
@@ -42,6 +46,17 @@ Producer knows before sending the message that which partition should be used.
 - **Acknowledgement**: After consuming message, Consumer sends an ack message to commit offset.
 - Next pull, 100 more messages are pulled from previous commit offset.
 ![03-message-deserialization.jpeg](img/03-message-deserialization.jpeg)
+
+Messaging gurantees
+  - At least once : 
+    - Offsets committed after message is processed
+    - read again
+  - At most once
+    - Committed on receive, then processed
+    - Lossy
+  - Exactly once: Only possible between topic to topic
+    - Using Kafka transactional API
+    - Using Kafka stream 
 
 
 ## Some FAQs
